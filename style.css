@@ -1,0 +1,101 @@
+
+:root {
+    --Primary: #824670;
+    --secondary_color: #C1F7DC;
+  }
+
+
+body{
+    margin: 0px;
+   
+}
+header{
+    margin: 0px;
+}
+
+#body-header{
+    height: 65vh;
+    background-image: url(/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;   
+}  
+.text-center{
+    text-align: center;
+}
+#my-name {
+    font-size: 3rem;
+    letter-spacing: 0.1rem;
+    color: white;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+#role{
+    font-size: 35px;
+    color: white
+}
+#social{
+    margin-top:20vh;
+}
+
+#body-header #home p{
+    color: var(--secondary_color);
+    text-align: center;
+    font-size: 25px;
+    margin: 0px;
+
+} 
+.horizontal-list {
+    list-style-type: none;
+    text-align: center;
+    align-items: center;
+    padding: 10px;
+    margin: 0;
+    background-color:#191717;
+    background-attachment: fixed;
+   
+
+}
+
+.horizontal-list li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.horizontal-list li a {
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+
+}
+
+.horizontal-list li a:hover {
+    color: blue;
+    transition: color 1s;
+}
+
+#about {
+    height: auto;
+    width: 100%;
+    position: relative;
+}
+
+#my-image {
+    height: 15rem;
+    width: 15rem;
+    margin: auto;
+    margin-top: -17vh;
+}
+
+#my-image img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: 3px solid grey;
+    
+    box-shadow: 1px 1px 10px 2px grey;
+}
+#about #para{
+    font-size: 25px;
+    padding: 15px;
+}
