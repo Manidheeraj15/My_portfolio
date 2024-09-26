@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Shortener Project</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .project-image {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        h2, h3 {
+            color: #333;
+        }
+
+        h3 {
+            color: black; /* Title color for the advantages and disadvantages */
+        }
+
+        .back-button {
+            display: inline-block;
+            margin: 20px 0;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+
+        .back-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>URL Shortener Project</h1>
+        <img src="url_image" alt="URL Shortener" class="project-image">
+
+        <h2>Abstract</h2>
+        <p>URL shortening is used to generate shorter aliases for prolonged URLs. We name these shortened aliases “short links.” Users are redirected to the authentic URL when they hit these brief links. Short hyperlinks retailer a lot of areas when displayed, printed, messaged, or tweeted. Additionally, customers are much less probable to mistype shorter links.</p>
+
+        <h2>Link Masking</h2>
+        <p>Shortening a URL lets you mask the unique internet address.</p>
+
+        <h2>Advantages</h2>
+        <h3>Hiding, “beautifying,” or branding an unsightly affiliate link.</h3>
+        <p>Shortening a prolonged area such as my upcoming e-book title: “playyesslikeapokerplayer.com” to something less difficult like “bespoke.link.”</p>
+        <p>Tracking — perhaps you are simply protecting the hyperlink so that you can music how many humans click on this one unique link. This is a digital advertising quality exercise when sharing hyperlinks online.</p>
+
+        <h2>Dis-Advantages</h2>
+        <h3>Abuse:</h3>
+        <p>URL Shortening offerings are a gorgeous supply for spammers and hackers to get a preserve of sufferer computers. They share a hyperlink and person into clicking the link. Thus, both placing up the virus in the sufferer pc or getting vital person credentials via pretend URL.</p>
+        <h3>Dead Link:</h3>
+        <p>If the shortening service, that was once used to shorten the URL is discontinued, Link will cease working. Thus, making it a Dead Link. These phenomena are additionally recognized as Linkrot.</p>
+
+        <h2>When to Use a URL Shortener</h2>
+        <p>You should use a URL shortener when posting a link across multiple sites on the web. As discussed earlier, it’s a lot easier to track and change one connection in one spot, as opposed to chase down all variants of it posted across your marketing channels and make the necessary changes. And that’s assuming you can even make those changes.</p>
+
+        <h2>URL Shorteners to Try</h2>
+        <p>They are:</p>
+        <ul>
+            <li>Ow.ly</li>
+            <li>Twitter URL shortener</li>
+            <li>Bitly</li>
+            <li>Rebrandly</li>
+            <li>TinyURL</li>
+            <li>SmallSEOTools</li>
+            <li>Blink</li>
+            <li>Sniply</li>
+            <li>Clkim</li>
+            <li>Clickmeter</li>
+        </ul>
+
+        <h2>Traffic</h2>
+        <p>Consider we will have 30M service calls per month (1M calls/day). If we are going to keep our service for 5 years, our service will generate about 1.8B records.</p>
+
+        <h2>Database Design</h2>
+        <p>We will want 2 foremost tables: 1 to shop person information, and 1 to keep URL information.</p>
+
+        <h3>URL Table</h3>
+        <ul>
+            <li>Hash: Varchar(16)</li>
+            <li>OriginalURL: varchar(512)</li>
+            <li>CreationDate: datetime</li>
+            <li>ExpirationDate: datatime</li>
+        </ul>
+
+        <h3>User Table</h3>
+        <ul>
+            <li>UserID: int</li>
+            <li>Name: varchar(20)</li>
+            <li>Email: varchar(32)</li>
+            <li>CreationDate: datetime</li>
+            <li>LastLogin: datatime</li>
+        </ul>
+
+        <h2>How to Prevent Hackers?</h2>
+        <p>Hackers can use API to create many shortened hyperlinks that exceed contemporary device design. With the cause of “Rest In Peace” our system.</p>
+        <p>For example, our present-day device is designing a response each and every month to 500 million URLs generated.</p>
+
+        <h2>Cache</h2>
+        <p>For a device of billions of clicks a month, a cache server is indispensable.</p>
+
+        <h3>Why Do We Need a Cache Server?</h3>
+        <p>The preferred go with the flow will be:</p>
+        <ol>
+            <li>Users get entry to shortened links.</li>
+            <li>We have to go to the DB to get the unique link from the shortened link.</li>
+            <li>Redirect the person to the unique link.</li>
+        </ol>
+
+        <h2>Back to Portfolio</h2>
+        <a href="index.html" class="back-button">Back to Portfolio</a>
+    </div>
+
+</body>
+</html>

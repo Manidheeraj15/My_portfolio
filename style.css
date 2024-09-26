@@ -293,6 +293,88 @@ p{
   width: 90%;
 }
 
+
+/* Portfolio Section */
+
+#portfolio {
+  background-color: #f5f5f5; /* Light background color for the section */
+  padding: 40px 0; /* Padding around the section */
+}
+
+#portfolio-container {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 50px;
+  gap: 95px;
+  justify-content: center; /* Center the items */
+  margin: 0px 40px 40px;
+}
+
+.portfolio-project {
+  flex: 1 1 350px; /* Adjusted for larger images */
+  max-width: 400px; /* Increased max width */
+  margin: 15px; 
+  overflow: hidden;
+  position: relative;
+}
+
+.portfolio-image-container {
+  height: 300px; /* Increased height for larger images */
+  overflow: hidden;
+  position: relative;
+  background-color: #f0f0f0; /* Background color for images */
+  border-radius: 8px; /* Rounded corners for a better look */
+}
+
+.portfolio-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+}
+
+.portfolio-details {
+  /* position: absolute;  */
+  bottom: 0; 
+  left: 0;
+  right: 0;
+  padding: 10px;
+  text-align: center;
+}
+
+.portfolio-details h2 {
+  margin: 0; 
+  font-size: 1.1em; 
+  background-color: black;
+}
+
+.portfolio-details h3 { /* Added styles for <h3> */
+  margin: 0; 
+  font-size: 1em; 
+  color: #000; /* Changed text color to yellow */
+}
+
+.know-more-button {
+  display: inline-block; 
+  margin-top: 5px; 
+  padding: 5px 10px; 
+  background-color: #007BFF; 
+  color: white; 
+  text-decoration: none; 
+  border-radius: 5px; 
+  transition: background-color 0.3s; 
+  font-size: 0.8em; 
+}
+
+.know-more-button:hover {
+  background-color: #0056b3; 
+}
+
+.portfolio-image-container:hover {
+  box-shadow: 0 0 20px #74ADC8; 
+}
+
+
 /* experience section */
 .timeline {
   position: relative;
@@ -612,6 +694,8 @@ h2 {
     border-color: transparent;
   }
 }
+
+
 /* #my-name {
   color: #eae8e1;
   font-size: 3rem;
